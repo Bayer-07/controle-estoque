@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.top-bar{
+    width: 100%;
+    background: red;
+    min-height: 4rem;
+    top: 0;
+    position: fixed;
+}
+
+.side-bar{
+    transition: 0.2s;
+    position: fixed;
+    left: 0;
+    min-width: 15rem;
+    max-width: 15rem;
+    background: red;
+    height: 100%;
+    top: 0;
+}
+.side-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-size: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.side-bar a:hover {
+    background: #00000042;
+}
+
+aside{
+    justify-content: center;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+    .side-bar{
+        transition: 0.2s;
+        min-width: 0;
+        max-width: 0;
+    }
+
+}
